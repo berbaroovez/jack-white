@@ -68,6 +68,10 @@ const JackIMG = styled.img`
     bottom: -20vh;
   }
 
+  @media only screen and (min-width: 1540px) {
+    max-height: 1100px;
+  }
+
   /* 
   @media only screen and (min-height: 750px) {
     min-height: 700px;
