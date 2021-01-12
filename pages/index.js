@@ -30,6 +30,7 @@ const HomePageContainer = styled.div`
   div {
     padding-top: 15vh;
     color: #f7ebe6;
+    line-height: 12vh;
   }
 `;
 
