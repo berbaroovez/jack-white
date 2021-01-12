@@ -34,6 +34,10 @@ const HomePageContainer = styled.div`
     @media only screen and (min-width: 740px) {
       line-height: 15vh;
     }
+    @media only screen and (min-width: 1440px) {
+      padding-top: 12vh;
+      line-height: 18vh;
+    }
     @media only screen and (min-width: 1540px) {
       padding-top: 12vh;
       line-height: 20vh;
