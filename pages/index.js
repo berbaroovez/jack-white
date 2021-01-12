@@ -31,6 +31,16 @@ const HomePageContainer = styled.div`
     padding-top: 15vh;
     color: #f7ebe6;
     line-height: 12vh;
+    @media only screen and (min-width: 740px) {
+      line-height: 15vh;
+    }
+    @media only screen and (min-width: 1540px) {
+      padding-top: 12vh;
+      line-height: 20vh;
+    }
+    @media (min-height: 1080px) and (min-width: 1920px) {
+      line-height: 13vh;
+    }
   }
 `;
 
@@ -40,6 +50,15 @@ const JackText = styled.h1`
   margin: 0;
   padding: 0;
   font-size: 5rem;
+  @media only screen and (min-width: 740px) {
+    font-size: 10rem;
+  }
+  @media only screen and (min-width: 1540px) {
+    font-size: 13rem;
+  }
+  @media (min-height: 1080px) and (min-width: 1920px) {
+    font-size: 10rem;
+  }
 `;
 const WhiteText = styled.h1`
   font-family: "Inter";
@@ -47,6 +66,16 @@ const WhiteText = styled.h1`
   margin: 0;
   padding: 0;
   font-size: 6.5rem;
+  @media only screen and (min-width: 740px) {
+    font-size: 13rem;
+  }
+
+  @media only screen and (min-width: 1540px) {
+    font-size: 15rem;
+  }
+  @media (min-height: 1080px) and (min-width: 1920px) {
+    font-size: 12rem;
+  }
 `;
 
 const JackIMG = styled.img`
@@ -71,17 +100,13 @@ const JackIMG = styled.img`
     max-height: 600px;
   }
   @media only screen and (min-width: 1540px) {
-    max-height: 1100px;
+    max-height: 900px;
+    bottom: -30vh;
   }
 
-  /* 
-  @media only screen and (min-height: 750px) {
-    min-height: 700px;
-    max-height: 700px;
+  @media (min-height: 1080px) and (min-width: 1920px) {
+    max-height: 900px;
   }
-  @media only screen and (min-height: 950px) {
-    min-height: 1000px;
-  } */
 `;
 
 const FrankIMG = styled.img`
@@ -98,7 +123,7 @@ const FrankIMG = styled.img`
   }
 
   @media only screen and (min-width: 1540px) {
-    max-height: 1200px;
+    max-height: 900px;
   }
 `;
 const HossIMG = styled.img`
@@ -116,6 +141,6 @@ const HossIMG = styled.img`
     display: unset;
   }
   @media only screen and (min-width: 1540px) {
-    max-height: 1200px;
+    max-height: 900px;
   }
 `;
