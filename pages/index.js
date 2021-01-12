@@ -30,7 +30,6 @@ const HomePageContainer = styled.div`
   div {
     padding-top: 15vh;
     color: #f7ebe6;
-    line-height: 12vh;
   }
 `;
 
@@ -67,7 +66,9 @@ const JackIMG = styled.img`
     left: 3vw;
     bottom: -20vh;
   }
-
+  @media only screen and (max-height: 800px) {
+    max-height: 600px;
+  }
   @media only screen and (min-width: 1540px) {
     max-height: 1100px;
   }
