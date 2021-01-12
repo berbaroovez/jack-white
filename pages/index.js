@@ -63,17 +63,26 @@ const JackIMG = styled.img`
   @media only screen and (min-width: 740px) {
     min-height: 700px;
     max-width: 55%;
-    max-height: 900px;
-    left: 15vw;
+    max-height: 800px;
+    left: 3vw;
     bottom: -20vh;
   }
+
+  /* 
+  @media only screen and (min-height: 750px) {
+    min-height: 700px;
+    max-height: 700px;
+  }
+  @media only screen and (min-height: 950px) {
+    min-height: 1000px;
+  } */
 `;
 
 const FrankIMG = styled.img`
   display: none;
   position: absolute;
   z-index: 1;
-  left: -200px;
+  left: -250px;
   bottom: 0;
   max-width: 95vw;
   height: auto;
@@ -81,13 +90,17 @@ const FrankIMG = styled.img`
   @media only screen and (min-width: 740px) {
     display: unset;
   }
+
+  @media only screen and (min-width: 1540px) {
+    max-height: 1200px;
+  }
 `;
 const HossIMG = styled.img`
   display: none;
   position: absolute;
   z-index: 1;
-  right: -50px;
-  bottom: -3rem;
+  right: -70px;
+  bottom: -70px;
   max-width: 55vw;
   height: auto;
 
@@ -95,5 +108,8 @@ const HossIMG = styled.img`
 
   @media only screen and (min-width: 740px) {
     display: unset;
+  }
+  @media only screen and (min-width: 1540px) {
+    max-height: 1200px;
   }
 `;
