@@ -154,7 +154,7 @@ const FrankIMG = styled.img`
   height: auto;
   max-height: 700px;
 
-  @media only screen and (min-width: 740px) and (min-height: 1000px) {
+  @media only screen and (min-width: 740px) and (min-height: 710px) {
     display: unset;
   }
 
@@ -174,7 +174,7 @@ const HossIMG = styled.img`
 
   max-height: 700px;
 
-  @media only screen and (min-width: 740px) and (min-height: 1000px) {
+  @media only screen and (min-width: 740px) and (min-height: 710px) {
     display: unset;
   }
   @media only screen and (min-width: 1540px) {
