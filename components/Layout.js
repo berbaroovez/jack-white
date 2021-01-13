@@ -5,7 +5,7 @@ export default function Layout({ children }) {
   return (
     <LayoutContainer>
       <Hamburger>
-        <Menu right>
+        <Menu disableAutoFocus right>
           <a id="home" className="menu-item" href="">
             ABOUT
           </a>
