@@ -159,6 +159,7 @@ const FrankIMG = styled.img`
   }
 
   @media only screen and (min-width: 1540px) {
+    display: unset;
     max-height: 900px;
   }
 `;
@@ -177,6 +178,7 @@ const HossIMG = styled.img`
     display: unset;
   }
   @media only screen and (min-width: 1540px) {
+    display: unset;
     max-height: 900px;
   }
 `;
