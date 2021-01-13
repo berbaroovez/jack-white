@@ -1,27 +1,11 @@
 import Head from "next/head";
 import styled from "styled-components";
-import { slide as Menu } from "react-burger-menu";
+
 import NavbarDesktop from "../components/Navbar";
+import Layout from "../components/Layout";
 export default function Home() {
   return (
-    <>
-      <Hamburger>
-        <Menu right>
-          <a id="home" className="menu-item" href="">
-            ABOUT
-          </a>
-          <a id="about" className="menu-item" href="">
-            CONTACT
-          </a>
-          <a id="contact" className="menu-item" href="">
-            GALLERY
-          </a>
-          <a className="menu-item--small" href="">
-            STORE
-          </a>
-        </Menu>
-      </Hamburger>
-      <NavbarDesktop />
+    <Layout>
       <HomePageContainer id="page-wrap">
         <div>
           <JackText>JACK</JackText>
@@ -38,21 +22,14 @@ export default function Home() {
           alt="a picture of boys in Hoss Clothing"
         />
       </HomePageContainer>
-    </>
+    </Layout>
   );
 }
-const Hamburger = styled.div`
-  display: block;
-  @media only screen and (min-width: 770px) {
-    display: none;
-  }
-`;
 
 const HomePageContainer = styled.div`
   width: 100vw;
   height: 100vh;
-  background-color: #e39d9c;
-  overflow: hidden;
+
   text-align: center;
   position: relative;
   div {
