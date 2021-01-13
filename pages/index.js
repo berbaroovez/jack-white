@@ -82,6 +82,9 @@ const JackText = styled.h1`
   margin: 0;
   padding: 0;
   font-size: 5rem;
+  @media (max-height: 500px) and (min-width: 650px) and (max-width: 750px) {
+    font-size: 3.5rem;
+  }
   @media only screen and (min-width: 740px) {
     font-size: 10rem;
   }
@@ -98,6 +101,9 @@ const WhiteText = styled.h1`
   margin: 0;
   padding: 0;
   font-size: 6.5rem;
+  @media (max-height: 500px) and (min-width: 650px) and (max-width: 750px) {
+    font-size: 5.5rem;
+  }
   @media only screen and (min-width: 740px) {
     font-size: 13rem;
   }
@@ -121,6 +127,12 @@ const JackIMG = styled.img`
   max-width: 95vw;
   height: auto;
   max-height: 700px;
+
+  @media (max-height: 500px) and (min-width: 650px) {
+    min-height: 300px;
+    max-width: 30%;
+    max-height: 300px;
+  }
   @media only screen and (min-width: 740px) {
     min-height: 700px;
     max-width: 55%;
@@ -150,6 +162,7 @@ const FrankIMG = styled.img`
   max-width: 95vw;
   height: auto;
   max-height: 700px;
+
   @media only screen and (min-width: 740px) {
     display: unset;
   }
