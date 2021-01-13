@@ -39,7 +39,7 @@ const Navbar = styled.div`
   gap: 5rem;
   padding-top: 1rem;
 
-  @media only screen and (min-width: 770px) {
+  @media only screen and (min-width: 770px) and (min-height: 651px) {
     display: grid;
   }
 `;

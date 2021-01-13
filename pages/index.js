@@ -36,7 +36,14 @@ const HomePageContainer = styled.div`
     padding-top: 15vh;
     color: #f7ebe6;
     line-height: 12vh;
-    @media only screen and (min-width: 740px) {
+
+    //phone landscape
+    @media (max-height: 500px) and (min-width: 650px) and (max-width: 850px) {
+      padding-top: 5vh;
+      line-height: 10vh;
+    }
+    //insuring that these dont mess with phone landscape mode by  setting a minimal height
+    @media only screen and (min-width: 740px) and (min-height: 651px) {
       line-height: 15vh;
     }
     @media only screen and (min-width: 1440px) {
@@ -59,10 +66,13 @@ const JackText = styled.h1`
   margin: 0;
   padding: 0;
   font-size: 5rem;
+
+  //phone landscape
   @media (max-height: 500px) and (min-width: 650px) and (max-width: 850px) {
     font-size: 3.5rem;
   }
-  @media only screen and (min-width: 740px) {
+  //insuring that these dont mess with phone landscape mode by  setting a minimal height
+  @media only screen and (min-width: 740px) and (min-height: 651px) {
     font-size: 10rem;
   }
   @media only screen and (min-width: 1540px) {
@@ -78,10 +88,12 @@ const WhiteText = styled.h1`
   margin: 0;
   padding: 0;
   font-size: 6.5rem;
+  //Trying to get decent results in phone landscape modes
   @media (max-height: 500px) and (min-width: 650px) and (max-width: 850px) {
-    font-size: 5.5rem;
+    font-size: 2rem;
   }
-  @media only screen and (min-width: 740px) {
+  //insuring that these dont mess with phone landscape mode by  setting a minimal height
+  @media only screen and (min-width: 740px) and (min-height: 651px) {
     font-size: 13rem;
   }
 
@@ -105,12 +117,14 @@ const JackIMG = styled.img`
   height: auto;
   max-height: 700px;
 
-  @media (max-height: 500px) and (min-width: 650px) and (max-width: 850px) {
+  //Trying to get decent results in phone landscape modes
+  @media only screen and (max-width: 850px) and (max-height: 650px) {
     min-height: 300px;
     max-width: 30%;
     max-height: 300px;
   }
-  @media only screen and (min-width: 740px) {
+  //insuring that these dont mess with phone landscape mode by  setting a minimal height
+  @media only screen and (min-width: 740px) and (min-height: 651px) {
     min-height: 700px;
     max-width: 55%;
     max-height: 800px;
@@ -140,7 +154,7 @@ const FrankIMG = styled.img`
   height: auto;
   max-height: 700px;
 
-  @media only screen and (min-width: 740px) {
+  @media only screen and (min-width: 740px) and (min-height: 1000px) {
     display: unset;
   }
 
@@ -159,7 +173,7 @@ const HossIMG = styled.img`
 
   max-height: 700px;
 
-  @media only screen and (min-width: 740px) {
+  @media only screen and (min-width: 740px) and (min-height: 1000px) {
     display: unset;
   }
   @media only screen and (min-width: 1540px) {

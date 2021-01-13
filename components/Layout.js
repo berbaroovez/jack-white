@@ -35,7 +35,7 @@ const LayoutContainer = styled.div`
 
 const Hamburger = styled.div`
   display: block;
-  @media only screen and (min-width: 770px) {
+  @media only screen and (min-width: 770px) and (min-height: 650px) {
     display: none;
   }
 `;
