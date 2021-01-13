@@ -1,23 +1,52 @@
 import Head from "next/head";
 import styled from "styled-components";
-
+import { slide as Menu } from "react-burger-menu";
+import NavbarDesktop from "../components/Navbar";
 export default function Home() {
   return (
-    <HomePageContainer>
-      <div>
-        <JackText>JACK</JackText>
-        <WhiteText>WHITE</WhiteText>
-      </div>
-      <FrankIMG src="/images/frank.png" alt="a picture of frank kaminsky" />
-      <JackIMG src="/images/jack.png" alt="a picture of jack white squating" />
+    <>
+      <Hamburger>
+        <Menu right>
+          <a id="home" className="menu-item" href="">
+            ABOUT
+          </a>
+          <a id="about" className="menu-item" href="">
+            CONTACT
+          </a>
+          <a id="contact" className="menu-item" href="">
+            GALLERY
+          </a>
+          <a className="menu-item--small" href="">
+            STORE
+          </a>
+        </Menu>
+      </Hamburger>
+      <NavbarDesktop />
+      <HomePageContainer id="page-wrap">
+        <div>
+          <JackText>JACK</JackText>
+          <WhiteText>WHITE</WhiteText>
+        </div>
+        <FrankIMG src="/images/frank.png" alt="a picture of frank kaminsky" />
+        <JackIMG
+          src="/images/jack.png"
+          alt="a picture of jack white squating"
+        />
 
-      <HossIMG
-        src="/images/hoss.png"
-        alt="a picture of boys in Hoss Clothing"
-      />
-    </HomePageContainer>
+        <HossIMG
+          src="/images/hoss.png"
+          alt="a picture of boys in Hoss Clothing"
+        />
+      </HomePageContainer>
+    </>
   );
 }
+const Hamburger = styled.div`
+  display: block;
+  @media only screen and (min-width: 770px) {
+    display: none;
+  }
+`;
 
 const HomePageContainer = styled.div`
   width: 100vw;
@@ -26,7 +55,6 @@ const HomePageContainer = styled.div`
   overflow: hidden;
   text-align: center;
   position: relative;
-
   div {
     padding-top: 15vh;
     color: #f7ebe6;
