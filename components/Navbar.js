@@ -1,20 +1,20 @@
 import styled from "styled-components";
-
+import Link from "next/link";
 export default function NavbarDesktop() {
   return (
     <Navbar>
-      <NavItem id="home" href="/about">
-        ABOUT
-      </NavItem>
-      <NavItem id="about" href="/about">
-        CONTACT
-      </NavItem>
-      <NavItem id="contact" href="">
-        GALLERY
-      </NavItem>
-      <NavItem className="menu-item--small" href="">
-        STORE
-      </NavItem>
+      <Link href="/about" passHref>
+        <NavItem id="home">ABOUT</NavItem>
+      </Link>
+      <Link href="/contact" passHref>
+        <NavItem id="about">CONTACT</NavItem>
+      </Link>
+      <Link href="/gallery" passHref>
+        <NavItem id="contact">GALLERY</NavItem>
+      </Link>
+      <Link href="/store" passHref>
+        <NavItem>STORE</NavItem>
+      </Link>
     </Navbar>
   );
 }

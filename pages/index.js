@@ -11,14 +11,14 @@ export default function Home() {
           <JackText>JACK</JackText>
           <WhiteText>WHITE</WhiteText>
         </div>
-        <FrankIMG src="/images/frank.png" alt="a picture of frank kaminsky" />
+        <FrankIMG src="/images/frank.webp" alt="a picture of frank kaminsky" />
         <JackIMG
-          src="/images/jack.png"
+          src="/images/jack.webp"
           alt="a picture of jack white squating"
         />
 
         <HossIMG
-          src="/images/hoss.png"
+          src="/images/hoss.webp"
           alt="a picture of boys in Hoss Clothing"
         />
       </HomePageContainer>
