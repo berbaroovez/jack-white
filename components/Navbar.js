@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import Link from "next/link";
+
 export default function NavbarDesktop() {
   return (
     <Navbar>
@@ -9,6 +10,11 @@ export default function NavbarDesktop() {
       <Link href="/contact" passHref>
         <NavItem id="about">CONTACT</NavItem>
       </Link>
+
+      <Link href="/" passHref>
+        <NavIcon src="/Jack.svg" alt="Jacks Logo" />
+      </Link>
+
       <Link href="/gallery" passHref>
         <NavItem id="contact">GALLERY</NavItem>
       </Link>
@@ -34,7 +40,7 @@ const Navbar = styled.div`
   font-size: 1.2rem;
   color: #f7ebe6;
 
-  grid-template-columns: repeat(4, auto);
+  grid-template-columns: repeat(5, auto);
   justify-content: center;
   gap: 5rem;
   padding-top: 1rem;
@@ -47,4 +53,11 @@ const NavItem = styled.a`
   &:hover {
     color: white;
   }
+`;
+
+const NavIcon = styled.img`
+  width: 30px;
+  height: 30px;
+  fill: red;
+  cursor: pointer;
 `;
